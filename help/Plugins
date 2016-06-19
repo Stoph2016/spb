@@ -1,0 +1,25 @@
+--[[
+# BY @StePh
+# CHANNEL @varietychan
+#
+]]
+
+do 
+
+local function stephbot(msg, matches)
+if is_momod(msg) and matches[1]== "help" then
+return " 👥 اسم المجموعة : "..msg.to.title.."\n\n".."💡 تعليمات بوت إدارة وحماية المجموعة".."\n\n".."➖🔹➖🔸➖🔹➖".."\n".."/ahelp  🗜 اوامر صاحب المجموعة ".."\n".."/ghelp 🔧  اوامر الطرد و الحماية".."\n".."/phelp  👥  اوامر ادارة مجموعة و مساعدة ".."\n".."/set      ⚙  الإعدادات المجموعة ".."\n".."➖🔹➖🔸➖🔹➖".."\n\n".."Support: @StePhbotSupport".."\n".."🗓  "..os.date("!%A, %B %d, %Y\n", timestamp)
+
+end
+
+end
+
+return {
+description = "Help", 
+usage = "Help",
+patterns = {
+        '^/(help)$'
+},
+run = stephbot,
+}
+end
